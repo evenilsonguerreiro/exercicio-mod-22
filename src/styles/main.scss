@@ -1,4 +1,8 @@
 @use "hero";
+@use "components/infos_bar";
+@use "components/buttons";
+@use "event";
+@use "faq";
 
 *{
     margin: 0;
@@ -6,7 +10,11 @@
     box-sizing: border-box;
     color: #fff;
     list-style: none;
+    text-decoration: none;
     font-family: "Roboto",sans-serif;
+}
+span{
+    color: yellow;
 }
 
 .container{
@@ -14,6 +22,7 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
+    
 
     @media (max-width:640px){
         max-width: 80%;
@@ -27,6 +36,4 @@
 
 
 
-body{
-    background-color: rgb(255, 0, 0);
-}
+

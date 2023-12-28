@@ -1,0 +1,18 @@
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+
+    &--primary{
+        color: #fff;
+        background-color: blueviolet;
+    }
+    @media (max-width:640px){
+        display: block;
+        width: 100%;
+    }
+}

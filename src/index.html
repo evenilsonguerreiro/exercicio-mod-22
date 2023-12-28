@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modulo-22</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
@@ -11,30 +12,128 @@
         <div class="container">
             <img class="hero__logo" src="./image/ebac_logo.svg" alt="">
             <p class="hero__text">
-                O maior evento de tecnologia em fortaleza começa em 12d 18h 20m 12s
+                O maior evento de tecnologia em fortaleza começa em <span id="contador"></span>
+                
             </p>
-        </div>
-        <div class="container">
-            <ul>
-                <li>
-                    <b>Localização</b>
-                    Bs Design - Desenbargador Moreira 2345 - Foetaleza-ce
-                </li>
-                <li>
-                    <b>Valor</b>
-                    Aparti De R$ 120,00
-                </li>
-                <li>
-                    <b>Dia</b>
-                    16/04/1024 ás 19hrs
-                </li>
-            </ul>
-        </div>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Bs Design - Desenbargador Moreira 2345 - Foetaleza-ce
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Valor</b>
+                        Aparti De R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Dia</b>
+                        16/04/1024 ás 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
+        </div>    
     </header>
 
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-left">
+           <div class="event__details">
+            <h2 class="event__details__title">
+                FRONT-END
+            </h2>
+            <p class="event__details__title__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat exercitationem saepe iure, enim officia, magnam totam doloremque explicabo magni perferendis officiis necessitatibus atque quam ullam autem temporibus quibusdam eveniet.
+            </p>
+           </div>
+           <img class="event__image" src="./image/frontend.png" alt="">
+        </div>
+    </section>
+
+    <section class="event event--ux-ui event--image-left">
+        <div class="container" data-aos="fade-right">
+           <div class="event__details">
+            <h2 class="event__details__title">
+                UX/UI
+            </h2>
+            <p class="event__details__title__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat exercitationem saepe iure, enim officia, magnam totam doloremque explicabo magni perferendis officiis necessitatibus atque quam ullam autem temporibus quibusdam eveniet.
+            </p>
+           </div>
+           <img class="event__image" src="./image/ui-ux.png" alt="">
+        </div>
+    </section>
+
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-left">
+           <div class="event__details">
+            <h2 class="event__details__title">
+                DATA-SCIENCE
+            </h2>
+            <p class="event__details__title__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat exercitationem saepe iure, enim officia, magnam totam doloremque explicabo magni perferendis officiis necessitatibus atque quam ullam autem temporibus quibusdam eveniet.
+            </p>
+           </div>
+           <img class="event__image" src="./image/backend.png" alt="">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-right">
+           <div class="event__details">
+            <h2 class="event__details__title">
+                BACKEND
+            </h2>
+            <p class="event__details__title__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat exercitationem saepe iure, enim officia, magnam totam doloremque explicabo magni perferendis officiis necessitatibus atque quam ullam autem temporibus quibusdam eveniet.
+            </p>
+           </div>
+           <img class="event__image" src="./image/data.png" alt="">
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <article>
+                <summary class="faq__title">
+                    QUAIS ATRAÇÕES DO EVENTO
+                </summary>
+                <details class="faq__title__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid et cum soluta non voluptatibus reiciendis, dignissimos eos libero sunt suscipit itaque. Possimus sunt optio molestias rerum molestiae quisquam saepe.
+                </details>
+            </article>
+            <article>
+                <summary class="faq__title">
+                    QUAIS OS PALESTRANTES
+                </summary>
+                <details class="faq__title__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid et cum soluta non voluptatibus reiciendis, dignissimos eos libero sunt suscipit itaque. Possimus sunt optio molestias rerum molestiae quisquam saepe.
+                </details>
+            </article>
+            <article>
+                <summary class="faq__title">
+                    QUAIS LIGUAGENS ABORDADAS
+                </summary>
+                <details class="faq__title__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid et cum soluta non voluptatibus reiciendis, dignissimos eos libero sunt suscipit itaque. Possimus sunt optio molestias rerum molestiae quisquam saepe.
+                </details>
+            </article>
+            <article>
+                <summary class="faq__title">
+                    QUAIS PRINCIAIS ASSUNTOS
+                </summary>
+                <details class="faq__title__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid et cum soluta non voluptatibus reiciendis, dignissimos eos libero sunt suscipit itaque. Possimus sunt optio molestias rerum molestiae quisquam saepe.
+                </details>
+            </article>
+        </div>
+    </section>
+    
 
 
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
     
 </body>

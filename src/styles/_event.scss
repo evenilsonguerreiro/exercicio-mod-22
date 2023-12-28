@@ -1,0 +1,62 @@
+.event{
+    padding: 80px 0;
+    
+    &--frontend{
+        background-image: linear-gradient(blue,yellow);
+    }
+
+    &--ux-ui{
+        background-image: linear-gradient(yellow,blue);
+    }
+
+    &--data-science{
+        background-image: linear-gradient(blue,yellow);
+    }
+
+    &--backend{
+        background-image: linear-gradient(yellow,blue); 
+    }
+
+
+    &--image-left{
+       .container{
+        flex-direction: row-reverse;
+       }
+    }
+
+
+    .container{
+        display: flex;
+        gap: 40px;
+        
+    }
+    &__image{
+        max-width: 360px;
+        border-top-left-radius: 30px;
+    }
+    &__details{
+        
+
+        &__title{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        &__description{
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    @media (max-width:640px){
+        .container{
+            display: block;
+        }
+        &__image{
+            width: 100%;
+        }
+        &__details{
+            margin-bottom: 16px;
+            margin-right: 0;
+        }
+    }
+}
