@@ -1,4 +1,7 @@
-.hero{
+ 
+ @use "variables";
+ 
+ .hero{
     padding: 64px;
     padding-bottom: 100px;
     background-image: url(../image/ai-7977960_1280.jpg);
@@ -14,7 +17,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.692);
+        background-color:variables.$textSegundo;
         content: '';
     }
 

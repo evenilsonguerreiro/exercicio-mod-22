@@ -3,18 +3,20 @@
 @use "components/buttons";
 @use "event";
 @use "faq";
+@use "variables";
+@use "footer";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    color:variables.$textPrincipal;
     list-style: none;
     text-decoration: none;
     font-family: "Roboto",sans-serif;
 }
 span{
-    color: yellow;
+    color:variables.$yellow;
 }
 
 .container{
